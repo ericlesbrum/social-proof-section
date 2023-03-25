@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap');
+
+:root {
+    --Very-Dark-Magenta: hsl(300, 43%, 22%);
+    --Soft-Pink: hsl(333, 80%, 67%);
+
+    --Dark-Grayish-Magenta: hsl(303, 10%, 53%);
+    --Light-Grayish-Magenta: hsl(300, 24%, 96%);
+
+    --White: hsl(0, 0%, 100%);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: none;
+}
+
+body {
+    font-family: 'League Spartan', sans-serif;
+    display: flex;
+    font-weight: 400;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: 15px;
+    width: 100%;
+    background-color: aquamarine;
+}
+
+.container {
+    width: 1200px;
+    height: 530px;
+    padding: 120px 95px;
+    background-color: var(--White);
+    margin-bottom: 20px;
+}
+
+.container .header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 70px;
+}
+
+.container .header div {
+    width: 60%;
+}
+
+.container .header .rated {
+    width: 40%;
+}
+
+.container .header div h1 {
+    font-weight: 700;
+    font-size: 3.5rem;
+    line-height: 50px;
+    margin-bottom: 30px;
+    margin-right: 270px;
+    color: var(--Very-Dark-Magenta);
+}
+
+.container .header div p {
+    color: var(--Very-Dark-Magenta);
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-right: 260px;
+}
+
+.container .profile-List {
+    list-style: none;
+    position: relative;
+}
+
+.container .profile-List .card {
+    border-radius: 8px;
+    position: absolute;
+    display: block;
+    padding: 45px 30px;
+    width: 320px;
+    background-color: var(--Very-Dark-Magenta);
+}
+
+.container .profile-List .card:nth-child(2) {
+    top: 20px;
+    left: 410px;
+}
+
+.container .profile-List .card:nth-child(3) {
+    top: 40px;
+    left: 820px;
+}
+
+.container .profile-List .card .profile {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.container .profile-List .card .profile img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50px;
+}
+
+.container .profile-List .card .profile .box {
+    margin-left: 20px;
+    font-weight: 500;
+    font-size: 1.3rem;
+    list-style: none;
+}
+
+.container .profile-List .card .profile .box .name {
+    color: var(--White);
+}
+
+.container .profile-List .card .profile .box .verified {
+    color: var(--Soft-Pink);
+}
+
+.card .text {
+    font-weight: 700;
+    color: var(--Light-Grayish-Magenta);
+    font-size: 1.05rem;
+    line-height: 25px;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
