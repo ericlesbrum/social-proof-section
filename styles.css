@@ -25,15 +25,17 @@ body {
     height: 100vh;
     font-size: 15px;
     width: 100%;
-    background-color: aquamarine;
 }
 
 .container {
     width: 1200px;
-    height: 530px;
-    padding: 120px 95px;
+    height: 680px;
+    padding: 120px 120px 120px 120px;
     background-color: var(--White);
     margin-bottom: 20px;
+    background-repeat: no-repeat, no-repeat;
+    background-position: left top, right bottom;
+    background-image: url('./images/bg-pattern-top-desktop.svg'), url('./images/bg-pattern-bottom-desktop.svg');
 }
 
 .container .header {
@@ -42,12 +44,12 @@ body {
     margin-bottom: 70px;
 }
 
-.container .header div {
-    width: 60%;
+.container .header>div {
+    width: 50%;
 }
 
 .container .header .rated {
-    width: 40%;
+    width: 50%;
 }
 
 .container .header div h1 {
@@ -66,6 +68,43 @@ body {
     margin-right: 260px;
 }
 
+.container .header .rated {
+    list-style: none;
+    position: relative;
+}
+
+.container .header .rated li {
+    position: absolute;
+    display: flex;
+    padding: 20px 40px;
+    background-color: var(--Light-Grayish-Magenta);
+    border-radius: 12px;
+}
+
+.container .header .rated li:nth-child(2) {
+    top: 85px;
+    left: 55px;
+}
+
+.container .header .rated li:nth-child(3) {
+    top: 170px;
+    left: 105px;
+}
+
+.container .header .rated li div {
+    margin-right: 30px;
+}
+
+.container .header .rated li div img {
+    margin: 3px;
+}
+
+.container .header .rated li span {
+    font-weight: 700;
+    color: var(--Very-Dark-Magenta);
+    font-size: 1.2rem;
+}
+
 .container .profile-List {
     list-style: none;
     position: relative;
@@ -75,7 +114,7 @@ body {
     border-radius: 8px;
     position: absolute;
     display: block;
-    padding: 45px 30px;
+    padding: 40px 30px;
     width: 320px;
     background-color: var(--Very-Dark-Magenta);
 }
