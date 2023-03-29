@@ -1,0 +1,99 @@
+@media only screen and (max-width: 375px) {
+    main {
+        width: 100%;
+        height: 100%;
+    }
+
+    .container {
+        width: 365px;
+        background-color: var(--White);
+        margin: 0 auto;
+        text-align: center;
+        margin-top: 70px;
+    }
+
+    .container .header {
+        margin-bottom: 50px;
+    }
+
+    .container .header div h1 {
+        font-weight: 700;
+        font-size: 2rem;
+        line-height: 30px;
+        margin: 0px 40px 20px 40px;
+        color: var(--Very-Dark-Magenta);
+    }
+
+    .container .header div p {
+        color: var(--Very-Dark-Magenta);
+        font-size: 1.2rem;
+        font-weight: 500;
+        margin: 0 5px 30px 5px;
+    }
+
+    .container .header .rated {
+        list-style: none;
+    }
+
+    .container .header .rated li {
+        display: flex;
+        padding: 15px;
+        flex-direction: column;
+        margin: 0px 15px 15px 15px;
+        background-color: var(--Light-Grayish-Magenta);
+        border-radius: 12px;
+    }
+
+    .container .header .rated li span {
+        margin-top: 5px;
+        font-weight: 700;
+        color: var(--Very-Dark-Magenta);
+        font-size: 1.2rem;
+    }
+
+    .container .profile-List {
+        list-style: none;
+        text-align: left;
+    }
+
+    .container .profile-List .card {
+        border-radius: 8px;
+        display: block;
+        padding: 30px 20px;
+        margin: 20px 20px 0 20px;
+        background-color: var(--Very-Dark-Magenta);
+    }
+
+    .container .profile-List .card .profile {
+        display: flex;
+        margin-bottom: 20px;
+    }
+
+    .container .profile-List .card .profile img {
+        width: 45px;
+        height: 45px;
+        border-radius: 50px;
+    }
+
+    .container .profile-List .card .profile .box {
+        margin: 5px 0px 0px 20px;
+        font-weight: 500;
+        font-size: 1rem;
+        list-style: none;
+    }
+
+    .container .profile-List .card .profile .box .name {
+        color: var(--White);
+    }
+
+    .container .profile-List .card .profile .box .verified {
+        color: var(--Soft-Pink);
+    }
+
+    .card .text {
+        font-weight: 700;
+        color: var(--Light-Grayish-Magenta);
+        font-size: 1.05rem;
+        line-height: 25px;
+    }
+}
