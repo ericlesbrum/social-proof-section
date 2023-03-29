@@ -1,13 +1,24 @@
 @media only screen and (min-width: 376px) {
+    body {
+        font-family: 'League Spartan', sans-serif;
+        display: flex;
+        font-weight: 400;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        font-size: 15px;
+        width: 100%;
+        background-repeat: no-repeat, no-repeat;
+        background-position: left top, right bottom;
+        background-image: url('../images/bg-pattern-top-desktop.svg'), url('../images/bg-pattern-bottom-desktop.svg');
+    }
+
     .container {
         width: 1200px;
         height: 680px;
         padding: 120px 120px 120px 120px;
         background-color: var(--White);
         margin-bottom: 20px;
-        background-repeat: no-repeat, no-repeat;
-        background-position: left top, right bottom;
-        background-image: url('../images/bg-pattern-top-desktop.svg'), url('../images/bg-pattern-bottom-desktop.svg');
     }
 
     .container .header {
